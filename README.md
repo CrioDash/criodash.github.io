@@ -29,5 +29,4 @@ The site will be published at `https://criodash.github.io`.
 - LinkedIn URL
 - CV file
 - Space Pizza description and media
-- Publishable commercial work
 - Bachelor project description and media

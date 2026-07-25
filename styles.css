@@ -444,6 +444,101 @@ h2 {
   line-height: 1.6;
 }
 
+.commercial-feature {
+  align-self: start;
+}
+
+.feature-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.feature-label {
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.feature-heading h4,
+.additional-projects h4 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  letter-spacing: -0.035em;
+}
+
+.feature-heading a {
+  color: var(--accent-soft);
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.commercial-feature > p,
+.additional-projects-copy > p:last-child {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.commercial-feature > p {
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.additional-projects {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.additional-projects-copy > p:last-child {
+  margin: 1rem 0 0;
+}
+
+.commercial-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.commercial-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-height: 104px;
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgb(18 21 25 / 55%);
+  transition:
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.commercial-links a:hover,
+.commercial-links a:focus-visible {
+  border-color: var(--accent);
+  background: var(--surface-strong);
+}
+
+.commercial-links strong {
+  font-size: 0.9rem;
+}
+
+.commercial-links span {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
 .screenshot-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -696,6 +791,10 @@ h2 {
     grid-template-columns: 1fr;
     align-items: start;
     min-height: auto;
+  }
+
+  .additional-projects {
+    grid-template-columns: 1fr;
   }
 
   .hero-panel {
