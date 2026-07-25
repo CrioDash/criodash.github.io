@@ -588,6 +588,10 @@ h2 {
   object-fit: contain;
 }
 
+.screenshot-gallery-triple .screenshot-main {
+  grid-column: 1 / -1;
+}
+
 .screenshot:hover img {
   transform: scale(1.025);
   filter: brightness(1.08);
@@ -907,6 +911,14 @@ h2 {
 
   .screenshot-gallery-wide {
     grid-template-columns: repeat(2, 82vw);
+  }
+
+  .screenshot-gallery-triple {
+    grid-template-columns: repeat(3, 82vw);
+  }
+
+  .screenshot-gallery-triple .screenshot-main {
+    grid-column: auto;
   }
 
   .screenshot {
