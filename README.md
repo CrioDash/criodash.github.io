@@ -5,7 +5,7 @@ JavaScript, so no build step or package installation is required.
 
 ## Local preview
 
-Run this command from the project directory:
+Run this command from the project directory: 
 
 ```bash
 python3 -m http.server 8000
