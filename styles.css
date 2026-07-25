@@ -332,6 +332,10 @@ h2 {
   padding-block: 2rem clamp(3rem, 7vw, 5rem);
 }
 
+.project-secondary {
+  margin-top: clamp(4rem, 8vw, 7rem);
+}
+
 .project-header {
   display: flex;
   justify-content: space-between;
@@ -478,6 +482,15 @@ h2 {
   transition:
     transform 280ms ease,
     filter 280ms ease;
+}
+
+.screenshot-gallery-wide {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.screenshot-gallery-wide .screenshot img {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .screenshot:hover img {
@@ -791,6 +804,10 @@ h2 {
     padding-right: 16px;
     padding-bottom: 0.75rem;
     scroll-snap-type: x mandatory;
+  }
+
+  .screenshot-gallery-wide {
+    grid-template-columns: repeat(2, 82vw);
   }
 
   .screenshot {
