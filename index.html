@@ -570,13 +570,87 @@
           </div>
         </article>
 
-        <div class="next-projects reveal">
-          <article>
-            <p>05 / Academic</p>
-            <h3>Bachelor project</h3>
-            <span>University project · Details in preparation</span>
-          </article>
-        </div>
+        <article class="featured-project project-secondary reveal">
+          <header class="project-header">
+            <div>
+              <p class="project-index">05 / Bachelor’s thesis</p>
+              <h3>Urban Mail Rush</h3>
+            </div>
+            <p class="project-date">April—June 2025</p>
+          </header>
+
+          <div class="project-layout">
+            <div class="project-copy">
+              <p class="project-lead">
+                An interactive 3D city-delivery simulation developed as my
+                bachelor’s thesis. The system generates delivery points,
+                optimizes their visiting order, builds routes through a road
+                network, and guides the player along the active route.
+              </p>
+
+              <div class="project-meta">
+                <div>
+                  <span>Role</span>
+                  <strong>Solo Unity developer</strong>
+                </div>
+                <div>
+                  <span>Type</span>
+                  <strong>Bachelor’s thesis</strong>
+                </div>
+                <div>
+                  <span>Built with</span>
+                  <strong>Unity · C# · Zenject · DOTween · Unity Test Framework</strong>
+                </div>
+              </div>
+
+              <div class="contributions">
+                <h4>Routing & simulation</h4>
+                <ul>
+                  <li>
+                    Generated delivery points and mapped them to the city road
+                    graph
+                  </li>
+                  <li>
+                    Built initial routes with Nearest Neighbour and improved
+                    them with 2-opt
+                  </li>
+                  <li>
+                    Used A* to find and cache paths between road-network nodes
+                  </li>
+                  <li>
+                    Recalculated and visualized the active route with
+                    LineRenderer
+                  </li>
+                  <li>
+                    Implemented player vehicle controls, NPC traffic, and
+                    obstacle handling
+                  </li>
+                  <li>
+                    Added automated tests for the core routing algorithms
+                  </li>
+                </ul>
+              </div>
+
+              <p class="project-note">
+                <strong>Performance testing:</strong> Nearest Neighbour
+                completed in approximately 3 ms for 10 points, 12 ms for 20,
+                and 25 ms for 30. The 2-opt pass took approximately 0.2 ms, and
+                route visualization updates took approximately 2 ms.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  class="button button-secondary"
+                  href="https://github.com/CrioDash/Urban-Mail-Rush"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View source on GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section class="about-section page-shell" id="about">
